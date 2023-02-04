@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+/*Estiliza todos os elementos da pagina*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url(./img/hamburgueria-fundo.jpg);
+    background-size: cover;
+}
+
+.icon {
+    margin-left: 10px;
+}
+/*Estiliza apenas a logo do site*/
+.img-logo {
+    height: 40px;
+    align-items: center;
+    padding: 15px;
+}
+
+/*Estiliza apenas a divisoria do titulo*/
+.title-div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estiliza todos os itens do nav (menu)*/
+.main-menu {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #000000;
+    color: white;
+    padding: 0px 15px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+}
+/*Estiliza apenas a divisoria do "Menu"*/
+.menu-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+/* Estiliza a ul principal (que engloba todos os dt) */
+.ul-principal {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* Estiliza apenas as dt principais, não estiliza sub dt */
+.dt-principal {
+    float: left;
+    justify-content: space-around;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+
+/*Estiliza os links do menu*/
+.menu-link {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* Estiliza o dropdown e faz ele ficar "invisivel" */
+.sub-menu {
+    position: absolute;
+    margin-top: 200px;
+    transition: all .3s ease-in-out;
+    opacity: 0 ;
+    text-align: center;
+    width: 6%;
+}
+
+/* Faz o dropdown reaparecer */
+.dt-principal:hover .sub-menu {
+    opacity: 1;
+    align-items: center;
+}
+
+.dt-principal:hover {
+    border-bottom: 5px solid #c87406;
+}
+
+/* Estiliza todos os dt do sub-menu */
+.sub-menu dt {
+    padding: 10px 0px;
+    background-color: #000000;
+}
+
+/* Estiliza todos os dt do sub-menu quando o mouse esta em cima */
+.sub-menu dt:hover {
+    background-color: #c87406;
+}
+
+/* Estiliza todos os links dentro do sub-menu */
+.sub-menu .menu-link {
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estiliza todos os links do sub-menu quando o mouse está em cima */
+.sub-menu .menu-link:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*Estiliza os links quando o mouse esta por cima*/
+.menu-link:hover{
+    color: #c87406;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+ .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.glass-div {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    height: 25%;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    background: rgba(0, 0, 0, 0.092);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.glass-div h1 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: xx-large;
+}
+
+.main-button {
+    color: white;
+    background-color: #c80606;
+    border-radius: 15px;
+    border: none;
+    width: 130px;
+    height: 32px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/* Estiliza todo o conteúdo do footer  */
+.content-footer {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    justify-content: space-around;
+    background-color: #1C1C1C;
+    color:#696969 ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/* Estiliza especificamente todos os h2 do footer */
+.content-footer h2 {
+    color: white;
+    padding: 10px;
+}
+
+/* Estiliza a logo presente no footer */
+.logo-footer {
+    height: 120px;
+}
+
+/* Estiliza o botão localizado no footer */
+.button-footer {
+    border-radius: 15px;
+    background-color: #b34059;
+    color: white;
+    border: 1px solid #b15468;
+    height: 30px;
+    width: 100px;
+}
+
+/* Estiliza o "contato" faz com que os icones fiquem acima do botão "contato" */
+.contato-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estiliza os icones do footer */
+.icon-footer {
+    padding-bottom: 25px;
+}
+
+/* Estiliza a linha do copyright */
+.copyright {
+    text-align: center;
+    background-color:#2b2b2b;
+    color: #696969;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

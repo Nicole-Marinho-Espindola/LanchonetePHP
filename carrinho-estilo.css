@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* .body-style {
+    background-color: #101010;
+} */
+
+.title-div {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+/*Estiliza apenas a logo do site*/
+.img-logo {
+    height: 40px;
+    align-items: center;
+    padding: 15px;
+}
+
+/*Estiliza apenas a divisoria do titulo*/
+.title-div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estiliza todos os itens do nav (menu)*/
+.main-menu {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #000000;
+    color: white;
+    padding: 0px 15px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+}
+/*Estiliza apenas a divisoria do "Menu"*/
+.menu-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.card-div {
+    color: white;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-div h1 {
+    color: #c87406;
+}
+
+.carrinho-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 40%;
+}
+
+.pagamento {
+    color: black;
+    background-color: #c87406;
+    width: 70%;
+    border-radius: 15px;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+}

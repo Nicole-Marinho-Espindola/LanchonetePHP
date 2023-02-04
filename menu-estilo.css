@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.body-style {
+    background-color: #101010
+}
+
+.title-div {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-titulo {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.img-logo {
+    height: 70px;
+    display: flex;
+    justify-items: center;
+    padding: 10px;
+}
+
+.img {
+    height: 300px;
+}
+
+.bloco-div {
+    background-color: black;
+    padding:30px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+    border-radius: 15px;
+}
+
+.card-div {
+    width: 30%;
+    margin: 0px 5px;
+    background-color: rgb(239, 234, 234);
+    border-radius: 15px;
+    border: 3px solid #9d0303;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-button {
+    color: white;
+    background-color: #c80606;
+    border-radius: 15px;
+    border: none;
+    width: 140px;
+    height: 32px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens-title {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
